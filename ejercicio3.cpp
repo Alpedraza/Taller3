@@ -8,11 +8,11 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Ingrese un número entero positivo (n): ";
+    cout << "Ingrese un numero entero positivo (n): ";
     cin >> n;
 
     if (n <= 0) {
-        cout << "Por favor, ingrese un número mayor que 0." << endl;
+        cout << "Por favor, ingrese un numero mayor que 0." << endl;
         return 1;
     }
     vector<int> numeros(n);
