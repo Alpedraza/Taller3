@@ -42,20 +42,20 @@ int main() {
         if (num > media) {
             mayorqm.push_back(num);
         }
-    }
+    }// La explicacion de la parte de arriba se omite dado este ejercicio se deriva del anterior  :V
 
-    sort(mayorqm.begin(), mayorqm.end());
+    sort(mayorqm.begin(), mayorqm.end());// ordena los elementos del vector automaticamente
 
-    cout << fixed << setprecision(2);
-    cout << "Media de los numeros: " << media << endl;
+    cout << fixed << setprecision(2); // impresion de dos decimales despues de la coma
+    cout << "Media de los numeros: " << media << endl; // imprime la media
     cout << "Elementos mayores que la media (orden de menor a mayor): ";
     if (mayorqm.empty()) {
         cout << "Ninguno de los elementos supera la media." << endl;
-    } else {
+    } else {// En caso de que el vector este vacio 
         cout << "[ ";
         for (size_t i = 0; i < mayorqm.size(); ++i) {
             cout << mayorqm[i] << (i < mayorqm.size() - 1 ? ", " : " ");
-        }
+        }// si el vector esta lleno, lo recorre e imprime y tambien las comas.
         cout << "]" << endl;
     }
 
